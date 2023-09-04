@@ -1,0 +1,86 @@
+{
+  "id": "57441460-cd36-49b5-afd9-4d6ee97e5294",
+  "version": "2.0",
+  "name": "SeleniumGUI",
+  "url": "https://convertlive.com/it/u/convertire/chilometri/a/miles",
+  "tests": [{
+    "id": "bd516b3d-d50a-46a2-bfcb-cf32d874709e",
+    "name": "KmToMiles",
+    "commands": [{
+      "id": "8fed022f-9773-4780-8974-ae31b1e33cb4",
+      "comment": "",
+      "command": "open",
+      "target": "https://convertlive.com/it/u/convertire/chilometri/a/miles",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61b2ac02-e151-4c62-ba04-d23aeeaf8fd8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1532x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5ec90d9-15cd-4881-b23d-9d720aa795ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=convert-value",
+      "targets": [
+        ["id=convert-value", "id"],
+        ["css=#convert-value", "css:finder"],
+        ["xpath=//input[@id='convert-value']", "xpath:attributes"],
+        ["xpath=//form[@id='converter']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc7e579e-c3f7-491d-b547-58646f42247a",
+      "comment": "",
+      "command": "type",
+      "target": "id=convert-value",
+      "targets": [
+        ["id=convert-value", "id"],
+        ["css=#convert-value", "css:finder"],
+        ["xpath=//input[@id='convert-value']", "xpath:attributes"],
+        ["xpath=//form[@id='converter']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "5de36f0d-b8f0-4675-bdd3-2b8b9f5e768a",
+      "comment": "",
+      "command": "click",
+      "target": "id=convert-submit",
+      "targets": [
+        ["id=convert-submit", "id"],
+        ["css=#convert-submit", "css:finder"],
+        ["xpath=//input[@id='convert-submit']", "xpath:attributes"],
+        ["xpath=//form[@id='converter']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3421a119-6f82-4847-99f2-9b96b56cfb8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.result-to",
+      "targets": [
+        ["css=.result-to", "css:finder"],
+        ["xpath=//form[@id='converter']/div[4]/p/span[4]", "xpath:idRelative"],
+        ["xpath=//span[4]", "xpath:position"],
+        ["xpath=//span[contains(.,'3.1069')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2859daf3-cee8-4476-abcc-208b7c5abbb4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://convertlive.com/", "https://convertlive.com/it/u/convertire/chilometri/a/miles"],
+  "plugins": []
+}
